@@ -7,14 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		40F3D61F35E419A580508297 /* Pods_Algolia_rajan_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17D47A40B0DDDB1D4DE21541 /* Pods_Algolia_rajan_test.framework */; };
 		5900DAFF23A109090051F092 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900DAFE23A109090051F092 /* AppDelegate.swift */; };
 		5900DB0123A109090051F092 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900DB0023A109090051F092 /* ViewController.swift */; };
 		5900DB0423A109090051F092 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5900DB0223A109090051F092 /* Main.storyboard */; };
 		5900DB0623A109090051F092 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5900DB0523A109090051F092 /* Assets.xcassets */; };
 		5900DB0923A109090051F092 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5900DB0723A109090051F092 /* LaunchScreen.storyboard */; };
+		5900DB1223A10FA60051F092 /* PostDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900DB1123A10FA60051F092 /* PostDetails.swift */; };
+		5900DB1523A110B60051F092 /* DateGeneric.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5900DB1423A110B60051F092 /* DateGeneric.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		17D47A40B0DDDB1D4DE21541 /* Pods_Algolia_rajan_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Algolia_rajan_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5900DAFB23A109090051F092 /* Algolia_rajan_test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Algolia_rajan_test.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5900DAFE23A109090051F092 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5900DB0023A109090051F092 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +26,10 @@
 		5900DB0523A109090051F092 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5900DB0823A109090051F092 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5900DB0A23A109090051F092 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5900DB1123A10FA60051F092 /* PostDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostDetails.swift; sourceTree = "<group>"; };
+		5900DB1423A110B60051F092 /* DateGeneric.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateGeneric.swift; sourceTree = "<group>"; };
+		75FBA3D8351FED48A7802255 /* Pods-Algolia_rajan_test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia_rajan_test.release.xcconfig"; path = "Pods/Target Support Files/Pods-Algolia_rajan_test/Pods-Algolia_rajan_test.release.xcconfig"; sourceTree = "<group>"; };
+		A9083A8A2246AC2A83013B3D /* Pods-Algolia_rajan_test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Algolia_rajan_test.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Algolia_rajan_test/Pods-Algolia_rajan_test.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				40F3D61F35E419A580508297 /* Pods_Algolia_rajan_test.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				5900DAFD23A109090051F092 /* Algolia_rajan_test */,
 				5900DAFC23A109090051F092 /* Products */,
+				E63A889C66FB9FD1BBD30AF6 /* Pods */,
+				8E5E71502FFE1D5C7D451F13 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +66,56 @@
 			isa = PBXGroup;
 			children = (
 				5900DAFE23A109090051F092 /* AppDelegate.swift */,
-				5900DB0023A109090051F092 /* ViewController.swift */,
+				5900DB1623A1228F0051F092 /* Controller */,
+				5900DB1023A10F830051F092 /* Model */,
+				5900DB1323A110860051F092 /* Helper */,
 				5900DB0223A109090051F092 /* Main.storyboard */,
 				5900DB0523A109090051F092 /* Assets.xcassets */,
 				5900DB0723A109090051F092 /* LaunchScreen.storyboard */,
 				5900DB0A23A109090051F092 /* Info.plist */,
 			);
 			path = Algolia_rajan_test;
+			sourceTree = "<group>";
+		};
+		5900DB1023A10F830051F092 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5900DB1123A10FA60051F092 /* PostDetails.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5900DB1323A110860051F092 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5900DB1423A110B60051F092 /* DateGeneric.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
+		5900DB1623A1228F0051F092 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5900DB0023A109090051F092 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8E5E71502FFE1D5C7D451F13 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				17D47A40B0DDDB1D4DE21541 /* Pods_Algolia_rajan_test.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E63A889C66FB9FD1BBD30AF6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9083A8A2246AC2A83013B3D /* Pods-Algolia_rajan_test.debug.xcconfig */,
+				75FBA3D8351FED48A7802255 /* Pods-Algolia_rajan_test.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +125,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5900DB0D23A109090051F092 /* Build configuration list for PBXNativeTarget "Algolia_rajan_test" */;
 			buildPhases = (
+				EF2C9BC22F0629E8F6871897 /* [CP] Check Pods Manifest.lock */,
 				5900DAF723A109090051F092 /* Sources */,
 				5900DAF823A109090051F092 /* Frameworks */,
 				5900DAF923A109090051F092 /* Resources */,
+				8E9E81C1D40172CB6AC8D391 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -130,13 +186,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		8E9E81C1D40172CB6AC8D391 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Algolia_rajan_test/Pods-Algolia_rajan_test-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Algolia_rajan_test/Pods-Algolia_rajan_test-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF2C9BC22F0629E8F6871897 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Algolia_rajan_test-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5900DAF723A109090051F092 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5900DB1223A10FA60051F092 /* PostDetails.swift in Sources */,
 				5900DB0123A109090051F092 /* ViewController.swift in Sources */,
 				5900DAFF23A109090051F092 /* AppDelegate.swift in Sources */,
+				5900DB1523A110B60051F092 /* DateGeneric.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +387,12 @@
 		};
 		5900DB0E23A109090051F092 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9083A8A2246AC2A83013B3D /* Pods-Algolia_rajan_test.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Algolia_rajan_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +406,12 @@
 		};
 		5900DB0F23A109090051F092 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 75FBA3D8351FED48A7802255 /* Pods-Algolia_rajan_test.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = Algolia_rajan_test/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
